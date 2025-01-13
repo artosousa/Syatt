@@ -107,3 +107,4 @@ Once you're comfortable with your changes, submit via email (brit.macintyre@syat
 - Share a link to a GitHub repo (make sure it is public).
 Or
 - Send a zip the repo or `build` directory. You can create that by running `bundle exec middleman build`
+- _However, please do not fork it._
