@@ -191,8 +191,8 @@ const scrollLock = {
     body.style.width = "100%";
   },
   disable: () => {
+    
     const body = document.querySelector("body");
-
     body.style.removeProperty("overflow");
     body.style.removeProperty("position");
     body.style.removeProperty("top");

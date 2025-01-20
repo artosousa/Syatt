@@ -3,7 +3,7 @@
     display: grid;
     position: relative;
     grid-template-areas: "media";
-    width: 100%;
+    // width: 100%;
   }
 
   .hero__media-wrapper {
@@ -38,6 +38,7 @@
     grid-area: media;
     flex-direction: column;
     padding: var(--spacing-unit-xs);
+    
   }
 
   .hero__content-wrapper--top-left {

@@ -1,5 +1,5 @@
 <div class="primary-nav" id="primary-nav">
-  <script src="/javascripts/nav-item.js" type="module"></script>
+  <script src="/javascripts/nav-item.js" type="module" defer></script>
   <link rel="stylesheet" href="/stylesheets/primary-nav.css" media="all">
   <link rel="stylesheet" href="/stylesheets/nav-item.css" media="all">
 
@@ -28,11 +28,12 @@
     </li>
     <li class="nav-item">
       <nav-item class="nav-item__content">
-        <span class="nav-item__wrapper">
-          <a href="/collections/toys" class="nav-item__link">
+        <button type="button" class="nav-item__link button-reset" aria-controls="dropdown_9A9Fa8" aria-expanded="false" aria-label="Open menu for Toys" data-trigger="">
+          <span class="nav-item__wrapper">
             <span class="nav-item__text">Toys</span>
-          </a><button type="button" class="button-reset nav-item__trigger" aria-hidden="true" aria-label="Open menu for Toys" aria-controls="dropdown_9A9Fa8" aria-expanded="false"></button>
-        </span>
+            <span class="nav-item__trigger"></span>
+          </span>
+        </button>
 
         <div id="dropdown_9A9Fa8" class="nav-item__dropdown nav-item__dropdown--full-width" data-menu="" aria-label="Toys">
           <style>
@@ -71,11 +72,12 @@
     </li>
     <li class="nav-item">
       <nav-item class="nav-item__content">
-        <span class="nav-item__wrapper">
-          <a href="/collections/paintings" class="nav-item__link">
+        <button type="button" class="nav-item__link button-reset" aria-controls="dropdown_YbMRrU" aria-expanded="false" aria-label="Open menu for Paintings" data-trigger="">
+          <span class="nav-item__wrapper">
             <span class="nav-item__text">Paintings</span>
-          </a><button type="button" class="button-reset nav-item__trigger" aria-hidden="true" aria-label="Open menu for Paintings" aria-controls="dropdown_YbMRrU" aria-expanded="false"></button>
-        </span>
+            <span class="nav-item__trigger"></span>
+          </span>
+        </button>
 
         <div id="dropdown_YbMRrU" class="nav-item__dropdown nav-item__dropdown--full-width" data-menu="" aria-label="Paintings">
           <style>

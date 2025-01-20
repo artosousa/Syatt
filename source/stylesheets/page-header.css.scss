@@ -53,7 +53,7 @@
 }
 
 .page-header__navigation {
-  display: block;
+  // display: block; Disabling this gets rid of diaply bug in navigation
   grid-area: navigation;
 
   @media screen and (min-width: 1024px), print {

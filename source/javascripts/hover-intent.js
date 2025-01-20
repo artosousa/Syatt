@@ -8,8 +8,8 @@ registerComponent(
       super({
         activeClass: "nav-item--expanded",
         elementSelector: ".nav-item",
-        mouseEnterDelay: 100,
-        mouseExitDelay: 400,
+        mouseEnterDelay: 0,
+        mouseExitDelay: 100,
         mouseSensitivity: 7,
       });
 

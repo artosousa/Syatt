@@ -2,8 +2,8 @@
   <link rel="stylesheet" href="/stylesheets/page-header.css" media="all">
 
   <div class="page-header__content content-wrapper">
-    <a href="/" class="page-header__logo">
-      <%= image_tag "logo.svg", class: "page-header__logo-image" %>
+    <a href="/" class="page-header__logo" title="Go to Homepage">
+      <%= image_tag "logo.webp",width:"110", height: "150", class: "page-header__logo-image", alt: "Syatt Logo" %>
     </a>
 
     <div class="page-header__search">
@@ -24,8 +24,8 @@
 
     <page-navigation class="page-header__navigation hidden-at-wide">
       <wyatt-drawer>
-        <script src="/javascripts/drawer.js" type="module"></script>
-        <link rel="stylesheet" href="/stylesheets/drawer.css" media="all">
+        <script src="/javascripts/drawer.js" type="module" defer></script>
+        <link rel="preload" href="/stylesheets/drawer.css" as="style">
 
         <span class="mobile-nav__open button-reset" data-open="">
           <span class="icon icon--menu utility-nav__icon" aria-hidden="true" focusable="false" role="presentation">

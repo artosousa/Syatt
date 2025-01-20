@@ -59,6 +59,16 @@ class WYATTDialog extends WYATTElement {
     this.wrapper = this.dialog.querySelector("[data-wrapper]");
 
     this.openButton.addEventListener("click", this.open.bind(this));
+    
+    this.openButton.addEventListener("keydown", (event) => {
+      //check is enter is pressed
+      if (event.key === "Enter") {
+        event.preventDefault()
+        this.open();
+      }
+    });
+    
+    
 
     this.handleClickOutside();
 

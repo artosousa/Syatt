@@ -1,6 +1,10 @@
 @layer components {
   .footer-menus {
     grid-area: menus;
+
+    &__nav-item{
+      padding: 6px 12px;
+    }
   }
 
   .footer-menus__content {

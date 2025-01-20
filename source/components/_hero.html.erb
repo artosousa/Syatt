@@ -1,14 +1,27 @@
-<div class="hero">
-  <link rel="stylesheet" href="/stylesheets/hero.css" media="print" onload="this.media='all'" />
+
+<div class="hero content-wrapper">
+  <link rel="stylesheet" href="/stylesheets/hero.css" media="all"  />
   
   <div class="hero__media-wrapper hero__media-wrapper--adapt">
-    <img src="https://placehold.co/4000x2000/png?text=Hero+Image" class="hero__media fit-image" />
+    <img srcset="https://placehold.co/400x200/webp?text=Hero+Image 400w,
+                    https://placehold.co/500x250/webp?text=Hero+Text 500w,
+                    https://placehold.co/600x300/webp?text=Hero+Text 600w,
+                    https://placehold.co/700x350/webp?text=Hero+Text 700w,
+                    https://placehold.co/800x400/webp?text=Hero+Text 800w,
+                    https://placehold.co/900x450/webp?text=Hero+Text 900w,
+                    https://placehold.co/1000x500/webp?text=Hero+Text 1000w,
+                    https://placehold.co/1100x550/webp?text=Hero+Text 1100w,
+                    https://placehold.co/1200x600/webp?text=Hero+Text 1200w,
+                    https://placehold.co/1300x650/webp?text=Hero+Text 1300w,
+                    https://placehold.co/1400x700/webp?text=Hero+Text 1400w,
+                    https://placehold.co/1500x750/webp?text=Hero+Text 1500w,
+                    " src="https://placehold.co/1500x750/webp?text=Hero+Image"  sizes="100vw"  class="media-with-text__image" alt="Hero Image" />
   </div>
 
   <div class="hero__content-wrapper hero__content-wrapper--middle-center">
     <div class="hero__content hero__content--middle-center vertical-flow">
       <div class="hero__block hero__block--heading">
-        <div class="section-heading heading-2 no-margin text-center" style="color: inherit">Lorem ipsum dolor sit amet</div>
+        <h2 class="section-heading heading-2 no-margin text-center" style="color: inherit">Lorem ipsum dolor sit amet</h2>
       </div>
 
       <div class="hero__block hero__block--text">
