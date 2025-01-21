@@ -5,6 +5,7 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport"
           content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Syatt Front End Developer Assessment">
 
     <title>Syatt Front End Developer Assessment</title>
     
@@ -13,18 +14,35 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   
     <link rel="stylesheet" href="/stylesheets/settings.css" media="all">
-    <link rel="stylesheet" href="/stylesheets/generic.css" media="all">
-    <link rel="stylesheet" href="/stylesheets/elements.css" media="all">
-    <link rel="stylesheet" href="/stylesheets/objects.css" media="all">
-    <link rel="stylesheet" href="/stylesheets/typography.css" media="all">
-    <link rel="stylesheet" href="/stylesheets/overrides.css" media="all">
 
-    <link rel="stylesheet" href="/stylesheets/button.css" media="all">
-    <link rel="stylesheet" href="/stylesheets/icon.css" media="all">
-    <link rel="stylesheet" href="/stylesheets/section-buttons.css" media="all">
-    <link rel="stylesheet" href="/stylesheets/section-text.css" media="all">
-    <link rel="stylesheet" href="/stylesheets/text-box.css" media="all">
-
+    <style>
+      @layer generic{html{-webkit-text-size-adjust:100%;line-height:1.15}body{margin:0}main{display:block}h1{margin:0.67em 0;font-size:2em}hr{-webkit-box-sizing:content-box;box-sizing:content-box;height:0;overflow:visible}pre{font-size:1em;font-family:monospace, monospace}a{background-color:transparent}abbr[title]{border-bottom:none;text-decoration:underline;-webkit-text-decoration:underline dotted;text-decoration:underline dotted}b,strong{font-weight:bolder}code,kbd,samp{font-size:1em;font-family:monospace, monospace}small{font-size:80%}sub,sup{position:relative;vertical-align:baseline;font-size:75%;line-height:0}sub{bottom:-0.25em}sup{top:-0.5em}img{border-style:none}button,input,optgroup,select,textarea{margin:0;font-size:100%;line-height:1.15;font-family:inherit}button,input{overflow:visible}button,select{text-transform:none}button,[type="button"],[type="reset"],[type="submit"]{-webkit-appearance:button;-moz-appearance:button;appearance:button}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner{border-style:none;padding:0}button:-moz-focusring,[type="button"]:-moz-focusring,[type="reset"]:-moz-focusring,[type="submit"]:-moz-focusring{outline:1px dotted ButtonText}fieldset{padding:0.35em 0.75em 0.625em}legend{display:table;-webkit-box-sizing:border-box;box-sizing:border-box;padding:0;max-width:100%;color:inherit;white-space:normal}progress{vertical-align:baseline}textarea{overflow:auto}[type="checkbox"],[type="radio"]{-webkit-box-sizing:border-box;box-sizing:border-box;padding:0}[type="number"]::-webkit-inner-spin-button,[type="number"]::-webkit-outer-spin-button{height:auto}[type="search"]{-webkit-appearance:textfield;-moz-appearance:textfield;appearance:textfield;outline-offset:-2px}[type="search"]::-webkit-search-decoration{-webkit-appearance:none;appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;appearance:button;font:inherit}details{display:block}summary{display:list-item}template{display:none}[hidden]{display:none}h1,h2,h3,h4,h5,h6,p,blockquote,pre,dl,dd,ol,ul,form,fieldset,legend,figure,caption,table,th,td,hr{margin:0}button,html [type="button"],[type="reset"],[type="submit"],textarea,input:not([type="radio"]):not([type="checkbox"]){-webkit-appearance:none;-moz-appearance:none;appearance:none}input::-ms-clear{display:none}}
+      @layer elements{html{-moz-osx-font-smoothing:grayscale;-webkit-font-smoothing:antialiased;-webkit-text-size-adjust:100%;-moz-text-size-adjust:100%;-ms-text-size-adjust:100%;text-size-adjust:100%;-webkit-box-sizing:border-box;box-sizing:border-box;background-color:var(--color-background);height:100%;overflow-y:scroll;scroll-behavior:smooth;color:var(--color-text);font-size:62.5%;line-height:1.4;font-family:var(--font-family-body);letter-spacing:normal}html *,html *:after,html *:before{-webkit-box-sizing:inherit;box-sizing:inherit}body{display:flex;flex-direction:column;min-height:100%}:focus-visible{outline-color:var(--color-focus-ring);outline-offset:0.3rem}a:empty,ul:empty,dl:empty,div:empty,section:empty,article:empty,p:empty,h1:empty,h2:empty,h3:empty,h4:empty,h5:empty,h6:empty{display:none}img{vertical-align:middle;max-width:100%;height:auto;font-style:italic}.gm-style img{max-width:none}dl,ul,ol{margin:0 0 var(--spacing-unit-s) var(--spacing-unit-s);padding:0 0 0 var(--spacing-unit-s)}fieldset,legend{margin-bottom:var(--spacing-unit-s)}fieldset{padding:var(--spacing-unit-xs)}select,input,textarea{background-color:var(--color-grays-01);color:var(--color-form-inputs);font-size:var(--font-size-form-controls)}label{font-size:var(--font-size-form-controls)}select{border-radius:0;width:100%;max-width:100%}textarea{vertical-align:baseline}select,button,input,textarea{-moz-osx-font-smoothing:grayscale;-webkit-font-smoothing:antialiased}button[disabled],input[disabled],textarea[disabled],select[disabled],optgroup[disabled],option[disabled],button[readonly],input[readonly],textarea[readonly],select[readonly],optgroup[readonly],option[readonly]{cursor:not-allowed;background-color:var(--color-form-disabled-background);color:var(--color-form-disabled)}::-webkit-input-placeholder, input::-webkit-input-placeholder{opacity:1;color:var(--color-form-placeholder)}::-moz-placeholder, input::-moz-placeholder{opacity:1;color:var(--color-form-placeholder)}:-ms-input-placeholder, input:-ms-input-placeholder{opacity:1;color:var(--color-form-placeholder)}::-ms-input-placeholder, input::-ms-input-placeholder{opacity:1;color:var(--color-form-placeholder)}::placeholder,input::placeholder{opacity:1;color:var(--color-form-placeholder)}table{margin-bottom:var(--spacing-unit-s);border-collapse:collapse;width:100%}th,td{vertical-align:baseline;padding:var(--spacing-unit-xs);text-align:left}th{font-weight:bold}td{font-weight:normal}live-region{display:block}}
+      @layer objects{.button-reset{cursor:pointer;margin:0;border:0;border-radius:0;background:none;padding:0;overflow:visible;color:inherit;font:inherit;line-height:normal;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.clickable-block{position:relative}.clickable-block a[href]:not([href=""])::after,.clickable-block button::after{display:block;position:absolute;top:0;right:0;bottom:0;left:0;content:""}.content-wrapper{margin:0 5vw}.content-wrapper--narrow{-webkit-box-sizing:content-box;box-sizing:content-box;margin:0 auto;padding:0 5vw;max-width:750px}.content-wrapper--very-narrow{-webkit-box-sizing:content-box;box-sizing:content-box;margin:0 auto;padding:0 5vw;max-width:550px}.fieldset-reset{margin:0;border:0;padding:0}.fit-image{width:100%;height:100%;-o-object-fit:cover;object-fit:cover;-o-object-position:center;object-position:center}.full-bleed{position:relative;right:50%;left:50%;margin-right:-50vw;margin-left:-50vw;width:100vw}.inline-list{display:flex;margin:0;padding:0;list-style:none}.list-reset{margin:0;padding:0;list-style:none}.text-left{text-align:left}.text-center{text-align:center}.text-right{text-align:right}.text-box-reset{border:0;background:none;padding:0}.vertical-flow{display:flex;flex-direction:column;gap:var(--spacing-unit-s)}.vertical-flow>*{margin:0}.vertical-flow>:empty{display:none}}
+      @layer settings{:root{--font-family-body: var(--font-family-two);--font-family-display: var(--font-family-three);--font-family-heading: var(--font-family-one);--font-size-body: 1.6rem;--font-size-button-text: 1.4rem;--font-size-display-1: clamp(2.8rem, 1.878vw + 2.096rem, 4.8rem);--font-size-display-2: clamp(4.8rem, 3.756vw + 3.392rem, 8.8rem);--font-size-form-controls: 1.6rem;--font-size-heading-1: clamp(3.2rem, 2.254vw + 2.355rem, 5.6rem);--font-size-heading-2: clamp(2.8rem, 1.127vw + 2.377rem, 4rem);--font-size-heading-3: clamp(2.6rem, 0.939vw + 2.248rem, 3.6rem);--font-size-heading-4: clamp(2.4rem, 0.376vw + 2.259rem, 2.8rem);--font-size-heading-5: 2rem;--font-size-heading-6: 1.6rem;--font-size-label: 1.4rem;--font-size-lead-text: 2rem;--font-size-running-head: 1.3rem;--font-size-small-text: 1.3rem;--letter-spacing-1: -0.1rem;--letter-spacing-2: -0.05rem;--letter-spacing-3: -0.2rem;--letter-spacing-button-text: var(--letter-spacing-2);--letter-spacing-display: var(--letter-spacing-1);--letter-spacing-heading: var(--letter-spacing-1);--letter-spacing-running-head: var(--letter-spacing-3);--letter-spacing-small-text: var(--letter-spacing-2);--line-height-1: 1.16;--line-height-2: 1.4;--line-height-body: var(--line-height-2);--line-height-button-text: var(--line-height-1);--line-height-display: var(--line-height-1);--line-height-heading: var(--line-height-1);--line-height-label: var(--line-height-1);--line-height-lead-text: var(--line-height-1);--line-height-running-head: var(--line-height-1);--line-height-small-text: var(--line-height-1);--font-button-text: 700 var(--font-size-button-text) /
+      var(--line-height-button-text) var(--font-family-body);--font-display-1: 400 var(--font-size-display-1) /
+      var(--line-height-display) var(--font-family-display);--font-display-2: 400 var(--font-size-display-2) /
+      var(--line-height-display) var(--font-family-display);--font-heading-1: 700 var(--font-size-heading-1) /
+      var(--line-height-heading) var(--font-family-heading);--font-heading-2: 700 var(--font-size-heading-2) /
+      var(--line-height-heading) var(--font-family-heading);--font-heading-3: 700 var(--font-size-heading-3) /
+      var(--line-height-heading) var(--font-family-heading);--font-heading-4: 700 var(--font-size-heading-4) /
+      var(--line-height-heading) var(--font-family-heading);--font-heading-5: 700 var(--font-size-heading-5) /
+      var(--line-height-heading) var(--font-family-heading);--font-heading-6: 700 var(--font-size-heading-6) /
+      var(--line-height-heading) var(--font-family-heading);--font-label: 400 var(--font-size-label) / var(--line-height-label)
+      var(--font-family-body);--font-lead-text: 400 var(--font-size-lead-text) /
+      var(--line-height-lead-text) var(--font-family-body);--font-paragraph: 400 var(--font-size-body) / var(--line-height-body)
+      var(--font-family-body);--font-paragraph-bold: 700 var(--font-size-body) / var(--line-height-body)
+      var(--font-family-body);--font-paragraph-link: 400 var(--font-size-body) / var(--line-height-body)
+      var(--font-family-body);--font-running-head: 400 var(--font-size-running-head) /
+      var(--line-height-running-head) var(--font-family-three);--font-small-text: 400 var(--font-size-small-text) /
+      var(--line-height-small-text) var(--font-family-body)}}@layer typography{body{font:var(--font-paragraph)}a{color:var(--color-links);font:var(--font-paragraph-link);text-decoration:underline}a:hover{text-decoration:none}p,blockquote,pre{margin-bottom:var(--spacing-unit-s)}address{font-style:inherit}.heading-1,h1{font:var(--font-heading-1);letter-spacing:var(--letter-spacing-heading)}.heading-2,h2{font:var(--font-heading-2);letter-spacing:var(--letter-spacing-heading)}.heading-3,h3{font:var(--font-heading-3);letter-spacing:var(--letter-spacing-heading)}.heading-4,h4{font:var(--font-heading-4);letter-spacing:var(--letter-spacing-heading)}.heading-5,h5{font:var(--font-heading-5)}.heading-6,h6{font:var(--font-heading-6)}h1,h2,h3,h4,h5,h6{margin-bottom:var(--spacing-unit-s)}.no-margin{margin:0}.display-1{font:var(--font-display-1);letter-spacing:var(--letter-spacing-display);text-transform:uppercase}.display-2{font:var(--font-display-2);letter-spacing:var(--letter-spacing-display)}.paragraph{font:var(--font-paragraph)}.paragraph-bold{font:var(--font-paragraph-bold)}.paragraph-link{color:var(--color-links);font:var(--font-paragraph-link);text-decoration:underline}.paragraph-link:hover{text-decoration:none}.button-text{font:var(--font-button-text);letter-spacing:var(--letter-spacing-button-text)}.running-head{font:var(--font-running-head);letter-spacing:var(--letter-spacing-running-head);text-transform:uppercase}.label{font:var(--font-label)}.lead-text{font:var(--font-lead-text)}.small-text{font:var(--font-small-text);letter-spacing:var(--letter-spacing-small-text)}}
+      @layer overrides{.break-word{-ms-hyphens:auto;hyphens:auto;word-break:break-word}.js .hidden-if-js-enabled{display:none}.hidden-unless-js-enabled{display:none}.js .hidden-unless-js-enabled{display:block}.hidden{display:none}@media screen and (max-width: 767px),print{.hidden-until-medium{display:none}}@media screen and (max-width: 1023px),print{.hidden-until-wide{display:none}}@media screen and (max-width: 1439px),print{.hidden-until-x-wide{display:none}}@media screen and (min-width: 768px),print{.hidden-at-medium{display:none}}@media screen and (min-width: 1024px),print{.hidden-at-wide{display:none}}@media screen and (min-width: 1440px),print{.hidden-at-x-wide{display:none}}.hidden-if-empty:empty{display:none}.truncate{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.visually-hidden{clip:rect(0 0 0 0);position:absolute;clip-path:inset(50%);width:1px;height:1px;overflow:hidden;white-space:nowrap}}
+      @layer components{.button{display:inline-flex;justify-content:center;align-items:center;vertical-align:middle;gap:var(--spacing-unit-xxs);-webkit-transition:background var(--transition-speed),color var(--transition-speed);transition:background var(--transition-speed),color var(--transition-speed);cursor:pointer;margin:0;border:1px solid transparent;border-radius:var(--border-radius);background:var(--color-brand-01);padding:var(--spacing-unit-xs) var(--spacing-unit-s);overflow:visible;color:var(--color-grays-01);font:inherit;font-size:var(--font-size-button-text);line-height:1;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;text-decoration:none}.button:hover{background:rgba(var(--color-brand-01-rgb), 0.75);text-decoration:none}.button:focus-visible{outline-color:var(--color-brand-01)}.button--secondary{border-color:var(--color-brand-01);background:var(--color-grays-01);color:var(--color-brand-01)}.button--secondary:hover{background:var(--color-brand-01);color:var(--color-grays-01)}.button--secondary:focus-visible{outline-color:var(--color-brand-01)}.button--disabled,.button:disabled{cursor:not-allowed;border-color:var(--color-form-disabled);background-color:var(--color-form-disabled-background);color:var(--color-text)}.button--disabled:hover,.button--disabled:focus-visible,.button:disabled:hover,.button:disabled:focus-visible{opacity:1;border-color:var(--color-form-disabled);background-color:var(--color-form-disabled-background);color:var(--color-text)}.button--full-width{width:100%;text-align:center}}
+      @layer components{.icon{display:inline-block;flex-shrink:0}.icon svg{display:block;width:100%;height:auto}.button .icon svg{width:auto;height:1em}}
+      @layer components{.section-buttons{display:flex;align-items:center;gap:var(--spacing-unit-s)}.section-buttons--row{flex-direction:row}.section-buttons--stacked{flex-direction:column}.section-buttons--left{justify-content:flex-start}.section-buttons--center{justify-content:center}.section-buttons--right{justify-content:flex-end}}
+      @layer components{.section-text p:last-child,.section-text h1:last-child,.section-text h2:last-child,.section-text h3:last-child,.section-text h4:last-child,.section-text h5:last-child,.section-text h6:last-child{margin-bottom:0}}
+      @layer components{.text-box{border:var(--border-width-form-input) solid var(--color-form-input-borders);border-radius:var(--border-radius);background:var(--color-grays-01);padding:var(--spacing-unit-xs);width:100%;color:var(--color-form-inputs);line-height:1}.text-box--fixed-width{width:200px}.text-box--multi-line{height:150px}.text-box--error,.text-box[aria-invalid="true"]{border:2px solid var(--error-color)}}
+    </style>
     <script type="importmap">
       {
         "imports": {
@@ -35,8 +53,8 @@
     </script>
   </head>
   <body>
-    <div class="page-header">
-  <link rel="stylesheet" href="/stylesheets/page-header.css" media="all">
+    <header class="page-header">
+  <link rel="preload" href="/stylesheets/page-header.css"  as="style" onload="this.rel='stylesheet'">
 
   <div class="page-header__content content-wrapper">
     <a href="/" class="page-header__logo" title="Go to Homepage">
@@ -45,8 +63,8 @@
 
     <div class="page-header__search">
       <div class="search-form">
-  <link rel="preload" href="/stylesheets/search-form.css" as="style">
-  <link rel="stylesheet" href="/stylesheets/search-form.css" media="all" >
+  <link rel="preload" href="/stylesheets/search-form.css" as="style" onload="this.rel='stylesheet'" >
+  
 
   <search-form class="search-form__wrapper">
     <form class="search-form__form" action="/search" method="get" role="search">
@@ -74,6 +92,7 @@
     <div class="page-header__utility">
       <div class="utility-nav">
   <link rel="preload" href="/stylesheets/utility-nav.css" as="style" onload="this.rel='stylesheet'" >
+  
   <ul class="utility-nav__menu inline-list">
     <li class="utility-nav__item utility-nav__item--account hidden-until-wide">
       <a href="/account" class="utility-nav__action" title="My Account">
@@ -106,7 +125,7 @@
 
           <div class="drawer__wrapper" data-wrapper="">
             <div class="drawer__header">
-              <h2 class="drawer__title heading-5 no-margin"></h2>
+              <h5 class="drawer__title heading-5 no-margin">My Cart</h5>
               <form method="dialog" class="drawer__close">
                 <button class="drawer__close-button button-reset" aria-label="Close drawer">
                   <span class="icon icon--close drawer__close-icon" aria-hidden="true" focusable="false" role="presentation">
@@ -120,8 +139,8 @@
 
             <div class="drawer__body">
               <live-region data-live-region="cart-items" aria-live="polite">
-  <link rel="stylesheet" href="/stylesheets/prices.css" media="all"/>
-  <link rel="stylesheet" href="/stylesheets/line-item.css" media="all"/>
+  <link rel="preload" href="/stylesheets/prices.css" as="style" onload="this.rel='stylesheet'"/>
+  <link rel="preload" href="/stylesheets/line-item.css" as="style" onload="this.rel='stylesheet'"/>
 
   <cart-items class="cart-items">
     <form action="/cart" method="post" id="cart-items-form-mini-cart" class="cart-items__form">
@@ -183,7 +202,7 @@
 
             <td class="line-item__cell line-item__cell--actions">
               <quantity-stepper class="quantity-stepper">
-  <link rel="stylesheet" href="/stylesheets/quantity-stepper.css" media="print" onload="this.media='all'"/>
+  <link rel="preload" href="/stylesheets/quantity-stepper.css" as="style" onload="this.rel='stylesheet'"/>
   <script src="/javascripts/quantity-stepper.js" type="module"></script>
 
   <button class="quantity-stepper__button quantity-stepper__button--decrement button-reset" name="minus" type="button" aria-label="Decrease quantity">
@@ -260,7 +279,7 @@
 
     <page-navigation class="page-header__navigation hidden-until-wide">
       <hover-intent>
-        <script src="/javascripts/hover-intent.js" type="module"></script>
+        <script src="/javascripts/hover-intent.js" type="module" defer></script>
 
         <div class="primary-nav" id="primary-nav">
   <script src="/javascripts/nav-item.js" type="module" defer></script>
@@ -287,7 +306,7 @@
           </style>
 
           <div class="mega-menu">
-  <link rel="stylesheet" href="/stylesheets/mega-menu.css" media="all">
+  <link rel="preload" href="/stylesheets/mega-menu.css" as="style" onload="this.rel='stylesheet'">
 
   <div class="content-wrapper">
     <!-- There are no changes expected from this point down into the DOM -->
@@ -522,7 +541,7 @@
   <li class="mega-menu__item mega-menu__item--1 mega-menu__item--content">
     <a class="mega-menu__content" href="/products/girl-with-a-pearl-earring-johannes-vermeer">
 
-      <img src="//wyatt-sandbox.myshopify.com/cdn/shop/files/99022bcbc95d671390f0f782f7cc5495.jpg?v=1726434116&amp;width=559" srcset="//wyatt-sandbox.myshopify.com/cdn/shop/files/99022bcbc95d671390f0f782f7cc5495.jpg?v=1726434116&amp;width=500 500w" width="559" height="800" loading="lazy" alt="Top Selling Menu Image" sizes="calc(90vw / 4)" class="mega-menu__image">
+      <img src="https://wyatt-sandbox.myshopify.com/cdn/shop/files/99022bcbc95d671390f0f782f7cc5495.jpg?v=1726434116&amp;width=559" srcset="https://wyatt-sandbox.myshopify.com/cdn/shop/files/99022bcbc95d671390f0f782f7cc5495.jpg?v=1726434116&amp;width=500 500w" width="559" height="800" loading="lazy" alt="Top Selling Menu Image" sizes="calc(90vw / 4)" class="mega-menu__image">
 
       <span class="mega-menu__content-text">Shop Now</span>
     </a>
@@ -553,7 +572,7 @@
           </style>
 
           <div class="mega-menu">
-  <link rel="stylesheet" href="/stylesheets/mega-menu.css" media="all">
+  <link rel="preload" href="/stylesheets/mega-menu.css" as="style" onload="this.rel='stylesheet'">
 
   <div class="content-wrapper">
     <!-- There are no changes expected from this point down into the DOM -->
@@ -692,7 +711,7 @@
           </style>
 
           <div class="mega-menu">
-  <link rel="stylesheet" href="/stylesheets/mega-menu.css" media="all">
+  <link rel="preload" href="/stylesheets/mega-menu.css" as="style" onload="this.rel='stylesheet'">
 
   <div class="content-wrapper">
     <!-- There are no changes expected from this point down into the DOM -->
@@ -807,7 +826,7 @@
           </style>
 
           <div class="mega-menu">
-  <link rel="stylesheet" href="/stylesheets/mega-menu.css" media="all">
+  <link rel="preload" href="/stylesheets/mega-menu.css" as="style" onload="this.rel='stylesheet'">
 
   <div class="content-wrapper">
     <!-- There are no changes expected from this point down into the DOM -->
@@ -904,9 +923,9 @@
     <page-navigation class="page-header__navigation hidden-at-wide">
       <wyatt-drawer>
         <script src="/javascripts/drawer.js" type="module" defer></script>
-        <link rel="preload" href="/stylesheets/drawer.css" as="style">
+        <link rel="preload" href="/stylesheets/drawer.css" as="style" onload="this.rel='stylesheet'">
 
-        <span class="mobile-nav__open button-reset" data-open="">
+        <span class="mobile-nav__open button-reset" data-open="" tabindex="1">
           <span class="icon icon--menu utility-nav__icon" aria-hidden="true" focusable="false" role="presentation">
             <svg xmlns="http://www.w3.org/2000/svg" height="24px" width="24px" viewBox="0 0 24 24" fill="currentColor">
               <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"></path>
@@ -919,7 +938,7 @@
 
           <div class="drawer__wrapper" data-wrapper="">
             <div class="drawer__header">
-              <h2 class="drawer__title heading-5 no-margin"></h2>
+              <h5 class="drawer__title heading-5 no-margin">Navigation</h5>
               <form method="dialog" class="drawer__close">
                 <button class="drawer__close-button button-reset" aria-label="Close drawer">
                   <span class="icon icon--close drawer__close-icon" aria-hidden="true" focusable="false" role="presentation">
@@ -933,9 +952,9 @@
 
             <div class="drawer__body">
               <div class="mobile-nav">
-  <script src="/javascripts/mobile-nav-item.js" type="module"></script>
-  <link rel="stylesheet" href="/stylesheets/mobile-nav.css" media="print" onload="this.media='all'">
-  <link rel="stylesheet" href="/stylesheets/mobile-nav-item.css" media="print" onload="this.media='all'">
+  <script src="/javascripts/mobile-nav-item.js" type="module" defer></script>
+  <link rel="preload" href="/stylesheets/mobile-nav.css" as="style" onload="this.rel='stylesheet'">
+  <link rel="preload" href="/stylesheets/mobile-nav-item.css" as="style" onload="this.rel='stylesheet'">
 
   <!-- There are no changes expected from this point down into the DOM -->
   <ul class="mobile-nav__menu list-reset">
@@ -1563,7 +1582,7 @@
           <li clas="mobile-nav-item mobile-nav-item--content">
             <a class="mobile-nav-item__content" href="/products/girl-with-a-pearl-earring-johannes-vermeer">
 
-              <img src="//wyatt-sandbox.myshopify.com/cdn/shop/files/99022bcbc95d671390f0f782f7cc5495.jpg?v=1726434116&amp;width=559" srcset="//wyatt-sandbox.myshopify.com/cdn/shop/files/99022bcbc95d671390f0f782f7cc5495.jpg?v=1726434116&amp;width=300 300w, //wyatt-sandbox.myshopify.com/cdn/shop/files/99022bcbc95d671390f0f782f7cc5495.jpg?v=1726434116&amp;width=400 400w, //wyatt-sandbox.myshopify.com/cdn/shop/files/99022bcbc95d671390f0f782f7cc5495.jpg?v=1726434116&amp;width=500 500w" width="559" height="800" loading="lazy" sizes="(min-width: 550px) 500px, 90vw" class="mobile-nav-item__image">
+              <img src="https://wyatt-sandbox.myshopify.com/cdn/shop/files/99022bcbc95d671390f0f782f7cc5495.jpg?v=1726434116&amp;width=559" srcset="https://wyatt-sandbox.myshopify.com/cdn/shop/files/99022bcbc95d671390f0f782f7cc5495.jpg?v=1726434116&amp;width=300 300w, https://wyatt-sandbox.myshopify.com/cdn/shop/files/99022bcbc95d671390f0f782f7cc5495.jpg?v=1726434116&amp;width=400 400w, https://wyatt-sandbox.myshopify.com/cdn/shop/files/99022bcbc95d671390f0f782f7cc5495.jpg?v=1726434116&amp;width=500 500w" width="559" height="800" loading="lazy" sizes="(min-width: 550px) 500px, 90vw" class="mobile-nav-item__image">
 
               <span class="mobile-nav-item__content-text">Shop Now</span>
             </a>
@@ -2230,9 +2249,9 @@
       </wyatt-drawer>
     </page-navigation>
   </div>
-</div>
+</header>
     
-    <div class="page-content">
+    <main class="page-content">
       <section id="shopify-section-template--17841128014003__a44ffb80-aa2e-461f-b6cf-a7e2beba26a6" class="shopify-section shopify-section--hero">
   <style>
     #shopify-section-template--17841128014003__a44ffb80-aa2e-461f-b6cf-a7e2beba26a6 .hero__content-wrapper {
@@ -2245,27 +2264,37 @@
     }
 
     #shopify-section-template--17841128014003__a44ffb80-aa2e-461f-b6cf-a7e2beba26a6 .hero__content {}
+    @layer components{.hero{display:-ms-grid;display:grid;position:relative;grid-template-areas:"media"}.hero__media-wrapper{-ms-grid-row:1;-ms-grid-column:1;grid-area:media}@media screen and (min-width: 768px),print{.hero__media-wrapper--small{max-height:300px}}@media screen and (min-width: 768px),print{.hero__media-wrapper--medium{max-height:360px}}@media screen and (min-width: 768px),print{.hero__media-wrapper--large{max-height:420px}}.hero__media--placeholder{display:block;background:var(--color-grays-02)}.hero__content-wrapper{-ms-grid-row:1;-ms-grid-column:1;display:flex;grid-area:media;flex-direction:column;padding:var(--spacing-unit-xs)}.hero__content-wrapper--top-left{align-self:flex-start;justify-self:flex-start}.hero__content-wrapper--top-center{align-self:flex-start;-ms-grid-column-align:center;justify-self:center}.hero__content-wrapper--top-right{align-self:flex-start;justify-self:flex-end}.hero__content-wrapper--middle-left{-ms-grid-row-align:center;align-self:center;justify-self:flex-start}.hero__content-wrapper--middle-center{-ms-grid-row-align:center;align-self:center;-ms-grid-column-align:center;justify-self:center}.hero__content-wrapper--middle-right{-ms-grid-row-align:center;align-self:center;justify-self:flex-end}.hero__content-wrapper--bottom-left{align-self:flex-end;justify-self:flex-start}.hero__content-wrapper--bottom-center{align-self:flex-end;-ms-grid-column-align:center;justify-self:center}.hero__content-wrapper--bottom-right{align-self:flex-end;justify-self:flex-end}.hero__content{padding:var(--spacing-unit-m);max-width:700px}}
   </style>
 
   <div class="shopify-section__content">
     
 <div class="hero content-wrapper">
-  <link rel="stylesheet" href="/stylesheets/hero.css" media="all"  />
-  
   <div class="hero__media-wrapper hero__media-wrapper--adapt">
-    <img srcset="https://placehold.co/400x200/webp?text=Hero+Image 400w,
-                    https://placehold.co/500x250/webp?text=Hero+Text 500w,
-                    https://placehold.co/600x300/webp?text=Hero+Text 600w,
-                    https://placehold.co/700x350/webp?text=Hero+Text 700w,
-                    https://placehold.co/800x400/webp?text=Hero+Text 800w,
-                    https://placehold.co/900x450/webp?text=Hero+Text 900w,
-                    https://placehold.co/1000x500/webp?text=Hero+Text 1000w,
-                    https://placehold.co/1100x550/webp?text=Hero+Text 1100w,
-                    https://placehold.co/1200x600/webp?text=Hero+Text 1200w,
-                    https://placehold.co/1300x650/webp?text=Hero+Text 1300w,
-                    https://placehold.co/1400x700/webp?text=Hero+Text 1400w,
-                    https://placehold.co/1500x750/webp?text=Hero+Text 1500w,
-                    " src="https://placehold.co/1500x750/webp?text=Hero+Image"  sizes="100vw"  class="media-with-text__image" alt="Hero Image" />
+  <picture>
+    <!-- WebP images for modern browsers -->
+    <source 
+      srcset="https://placehold.co/400x200/webp?text=Hero+Image 400w,
+              https://placehold.co/800x400/webp?text=Hero+Text 800w,
+              https://placehold.co/1200x600/webp?text=Hero+Text 1200w,
+              https://placehold.co/1500x750/webp?text=Hero+Text 1500w"
+      sizes="100vw" 
+      type="image/webp">
+    
+    <!-- Fallback for browsers  -->
+    <source 
+      srcset="https://placehold.co/400x200?text=Hero+Image 400w,
+              https://placehold.co/800x400?text=Hero+Text 800w,
+              https://placehold.co/1200x600?text=Hero+Text 1200w,
+              https://placehold.co/1500x750?text=Hero+Text 1500w"
+      sizes="100vw">
+    
+    <!-- Default Image-->
+    <img src="https://placehold.co/1500x750?text=Hero+Image"
+        alt="Hero Image" 
+        class="hero__media fit-image" 
+        loading="lazy">
+  </picture>
   </div>
 
   <div class="hero__content-wrapper hero__content-wrapper--middle-center">
@@ -2459,14 +2488,14 @@
   </div>
 </section>
 
-    </div>
+    </main>
     
     <div class="page-footer">
-  <link rel="stylesheet" href="/stylesheets/page-footer.css" media="print" onload="this.media='all'">
+  <link rel="preload" href="/stylesheets/page-footer.css" as="style" onload="this.rel='stylesheet'">
 
-  <div class="page-footer__content content-wrapper">
+  <footer class="page-footer__content content-wrapper">
     <section class="footer-menus">
-  <link rel="stylesheet" href="/stylesheets/footer-menus.css" media="print" onload="this.media='all'">
+  <link rel="preload" href="/stylesheets/footer-menus.css" as="style" onload="this.rel='stylesheet'">
 
   <div class="footer-menus__content vertical-flow">
     <div class="footer-menus__nav" aria-labelledby="heading-658d14fc-885a-4c5c-90fc-3480b7e22969">
@@ -2547,7 +2576,7 @@
 </section>
 
     <section class="footer-email">
-  <link rel="stylesheet" href="/stylesheets/footer-email.css" media="print" onload="this.media='all'">
+  <link rel="preload" href="/stylesheets/footer-email.css" as="style" onload="this.rel='stylesheet'">
 
   <div class="footer-email__content">
     <h2 class="footer-email__heading heading-2 text-center">Email Signup</h2>
@@ -2558,7 +2587,7 @@
 
     <div class="footer-email__form">
       <form method="post" action="/contact#contact_form" id="contact_form" accept-charset="UTF-8" class="email-form">
-  <link rel="stylesheet" href="/stylesheets/email-form.css" media="print" onload="this.media='all'">
+  <link rel="preload" href="/stylesheets/email-form.css" as="style" onload="this.rel='stylesheet'">
 
   <input type="hidden" name="form_type" value="customer">
   <input type="hidden" name="utf8" value="✓">
@@ -2581,11 +2610,11 @@
 </section>
 
     <section class="footer-social">
-  <link rel="stylesheet" href="/stylesheets/footer-social.css" media="print" onload="this.media='all'">
+  <link rel="preload" href="/stylesheets/footer-social.css" as="style" onload="this.rel='stylesheet'">
 
   <div class="footer-social__content">
     <ul class="social-links list-reset">
-  <link rel="stylesheet" href="/stylesheets/social-links.css" media="print" onload="this.media='all'">
+  <link rel="preload" href="/stylesheets/social-links.css" as="style" onload="this.rel='stylesheet'">
 
   <li class="social-links__item social-links__item--facebook">
     <a href="/" class="social-links__link" target="_blank" title="Facebook">
@@ -2641,7 +2670,7 @@
 </section>
 
     <section class="footer-utility">
-  <link rel="stylesheet" href="/stylesheets/footer-utility.css" media="print" onload="this.media='all'">
+  <link rel="preload" href="/stylesheets/footer-utility.css" as="style" onload="this.rel='stylesheet'">
 
   <div class="footer-utility__content">
     <div class="footer-utility__cell">
@@ -2665,6 +2694,6 @@
   </div>
 </section>
   </div>
-</div>
+</footer>
   </body>
 </html>

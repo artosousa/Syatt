@@ -1,7 +1,7 @@
 <div class="mobile-nav">
-  <script src="/javascripts/mobile-nav-item.js" type="module"></script>
-  <link rel="stylesheet" href="/stylesheets/mobile-nav.css" media="print" onload="this.media='all'">
-  <link rel="stylesheet" href="/stylesheets/mobile-nav-item.css" media="print" onload="this.media='all'">
+  <script src="/javascripts/mobile-nav-item.js" type="module" defer></script>
+  <link rel="preload" href="/stylesheets/mobile-nav.css" as="style" onload="this.rel='stylesheet'">
+  <link rel="preload" href="/stylesheets/mobile-nav-item.css" as="style" onload="this.rel='stylesheet'">
 
   <!-- There are no changes expected from this point down into the DOM -->
   <ul class="mobile-nav__menu list-reset">
@@ -629,7 +629,7 @@
           <li clas="mobile-nav-item mobile-nav-item--content">
             <a class="mobile-nav-item__content" href="/products/girl-with-a-pearl-earring-johannes-vermeer">
 
-              <img src="//wyatt-sandbox.myshopify.com/cdn/shop/files/99022bcbc95d671390f0f782f7cc5495.jpg?v=1726434116&amp;width=559" srcset="//wyatt-sandbox.myshopify.com/cdn/shop/files/99022bcbc95d671390f0f782f7cc5495.jpg?v=1726434116&amp;width=300 300w, //wyatt-sandbox.myshopify.com/cdn/shop/files/99022bcbc95d671390f0f782f7cc5495.jpg?v=1726434116&amp;width=400 400w, //wyatt-sandbox.myshopify.com/cdn/shop/files/99022bcbc95d671390f0f782f7cc5495.jpg?v=1726434116&amp;width=500 500w" width="559" height="800" loading="lazy" sizes="(min-width: 550px) 500px, 90vw" class="mobile-nav-item__image">
+              <img src="https://wyatt-sandbox.myshopify.com/cdn/shop/files/99022bcbc95d671390f0f782f7cc5495.jpg?v=1726434116&amp;width=559" srcset="https://wyatt-sandbox.myshopify.com/cdn/shop/files/99022bcbc95d671390f0f782f7cc5495.jpg?v=1726434116&amp;width=300 300w, https://wyatt-sandbox.myshopify.com/cdn/shop/files/99022bcbc95d671390f0f782f7cc5495.jpg?v=1726434116&amp;width=400 400w, https://wyatt-sandbox.myshopify.com/cdn/shop/files/99022bcbc95d671390f0f782f7cc5495.jpg?v=1726434116&amp;width=500 500w" width="559" height="800" loading="lazy" sizes="(min-width: 550px) 500px, 90vw" class="mobile-nav-item__image">
 
               <span class="mobile-nav-item__content-text">Shop Now</span>
             </a>

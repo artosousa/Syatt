@@ -1,6 +1,6 @@
 <live-region data-live-region="cart-items" aria-live="polite">
-  <link rel="stylesheet" href="/stylesheets/prices.css" media="all"/>
-  <link rel="stylesheet" href="/stylesheets/line-item.css" media="all"/>
+  <link rel="preload" href="/stylesheets/prices.css" as="style" onload="this.rel='stylesheet'"/>
+  <link rel="preload" href="/stylesheets/line-item.css" as="style" onload="this.rel='stylesheet'"/>
 
   <cart-items class="cart-items">
     <form action="/cart" method="post" id="cart-items-form-mini-cart" class="cart-items__form">

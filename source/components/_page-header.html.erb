@@ -1,5 +1,5 @@
-<div class="page-header">
-  <link rel="stylesheet" href="/stylesheets/page-header.css" media="all">
+<header class="page-header">
+  <link rel="preload" href="/stylesheets/page-header.css"  as="style" onload="this.rel='stylesheet'">
 
   <div class="page-header__content content-wrapper">
     <a href="/" class="page-header__logo" title="Go to Homepage">
@@ -16,7 +16,7 @@
 
     <page-navigation class="page-header__navigation hidden-until-wide">
       <hover-intent>
-        <script src="/javascripts/hover-intent.js" type="module"></script>
+        <script src="/javascripts/hover-intent.js" type="module" defer></script>
 
         <%= partial "components/primary-nav" %>
       </hover-intent>
@@ -25,9 +25,9 @@
     <page-navigation class="page-header__navigation hidden-at-wide">
       <wyatt-drawer>
         <script src="/javascripts/drawer.js" type="module" defer></script>
-        <link rel="preload" href="/stylesheets/drawer.css" as="style">
+        <link rel="preload" href="/stylesheets/drawer.css" as="style" onload="this.rel='stylesheet'">
 
-        <span class="mobile-nav__open button-reset" data-open="">
+        <span class="mobile-nav__open button-reset" data-open="" tabindex="1">
           <span class="icon icon--menu utility-nav__icon" aria-hidden="true" focusable="false" role="presentation">
             <svg xmlns="http://www.w3.org/2000/svg" height="24px" width="24px" viewBox="0 0 24 24" fill="currentColor">
               <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"></path>
@@ -40,7 +40,7 @@
 
           <div class="drawer__wrapper" data-wrapper="">
             <div class="drawer__header">
-              <h2 class="drawer__title heading-5 no-margin"></h2>
+              <h5 class="drawer__title heading-5 no-margin">Navigation</h5>
               <form method="dialog" class="drawer__close">
                 <button class="drawer__close-button button-reset" aria-label="Close drawer">
                   <span class="icon icon--close drawer__close-icon" aria-hidden="true" focusable="false" role="presentation">
@@ -64,4 +64,4 @@
       </wyatt-drawer>
     </page-navigation>
   </div>
-</div>
+</header>
